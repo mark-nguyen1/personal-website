@@ -1,42 +1,79 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+  background-color: lightblue;
+}
+.header {
+  background-color: white;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar a {
+  position: relative;
+  margin-left: 30px;
+  font-size: x-large;
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.navbar a::before {
+  content: "";
+  background: black;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  top: 100%;
+  transition: 0.3s;
 }
 
-.card {
-  padding: 2em;
+.navbar a:hover::before {
+  width: 100%;
 }
 
-.read-the-docs {
-  color: #888;
+/* -------------------- profile --------------- */
+
+.profile-container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+}
+
+.profile-container div {
+  padding: 10%;
+}
+.profile-container span {
+  color: rgb(28, 151, 12);
+}
+.profile-container h1 {
+  font-size: 65px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.content-container {
+  margin-left: 5%;
+}
+
+.image-container {
+  margin-right: 10%;
+  margin-left: -10%;
+}
+.profile-container p {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+.circular-image {
+  border-radius: 10%;
+  object-fit: cover;
+  box-shadow: 10px 5px 25px rgb(114, 113, 113);
+  transition: 0.5s;
+  margin-top: -50px; /* Adjust margin-top to move the image up */
+}
+
+.circular-image:hover {
+  box-shadow: 10px 5px 100px rgb(235, 233, 149);
 }
