@@ -1,8 +1,6 @@
-import { useState } from "react";
 import NavBar from "./components/navigation-bar/NavBar";
 import Profile from "./components/profile/Profile";
-import InfoCard from "./components/card/InfoCard";
-import projectData from "./data/projects.json";
+import InfoCards from "./components/card/InfoCards";
 import "./App.css";
 
 function App() {
@@ -10,14 +8,7 @@ function App() {
     <>
       <NavBar></NavBar>
       <Profile></Profile>
-      {projectData.projects.map((project, index) => (
-        <InfoCard
-          img={project.img}
-          title={project.title}
-          techStacks={project.techStacks}
-          projectInfo={project.projectInfo}
-        ></InfoCard>
-      ))}
+      <InfoCards></InfoCards>
     </>
   );
 }

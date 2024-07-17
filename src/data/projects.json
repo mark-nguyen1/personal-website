@@ -1,0 +1,17 @@
+{ 
+    "projects":[
+        
+        {
+            "img":"../assets/game.png",
+            "title":"Game Discoverer",
+            "techStacks":"ReactJS, TypeScript,  Chakra UI, Rawg.io Database API ",
+            "projectInfo":"A website that utilizes a database of over 1000s games to help users find new games based on genres, publishers, and gaming platform."
+        },
+        {
+            "img":"../assets/ntf.jpg",
+            "title":"Twitter Clone",
+            "techStacks":"ReactJS, NodeJS, ExpressJS, MongoDB, Tailwind, JavaScript ",
+            "projectInfo":"A twitter clone."
+        }
+    ]
+}

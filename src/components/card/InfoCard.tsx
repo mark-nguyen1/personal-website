@@ -6,6 +6,7 @@ interface Props {
 }
 
 const InfoCard = ({ img, title, techStacks, projectInfo }: Props) => {
+  console.log(img);
   return (
     <div className="card-container">
       <img src={img}></img>

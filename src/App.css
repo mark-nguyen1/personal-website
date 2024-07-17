@@ -91,6 +91,7 @@ nav {
   flex-direction: row;
 
   transition: 0.5s;
+  margin-bottom: 60px;
 }
 
 .card-container:hover {
