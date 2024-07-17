@@ -77,3 +77,48 @@ nav {
 .circular-image:hover {
   box-shadow: 10px 5px 100px rgb(235, 233, 149);
 }
+
+/* -------------------- info card --------------- */
+.card-container {
+  background-color: white;
+  display: flex;
+  width: 55%;
+  margin: auto;
+  border-radius: 45px;
+  height: 300px;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+
+  transition: 0.5s;
+}
+
+.card-container:hover {
+  height: 330px;
+  width: 58%;
+}
+
+.card-container img {
+  width: 200px;
+  height: 80%;
+  margin: 30px;
+  border-radius: 45px;
+}
+
+.card-text-container {
+  height: 100%;
+  background-color: white;
+  margin-right: 50px;
+  flex-direction: column;
+  column-gap: 222px;
+}
+
+.card-text-container p,
+.card-text-container h1,
+.card-text-container h3 {
+  background-color: white;
+}
+
+.card-text-container h1 {
+  font-size: 35px;
+}
