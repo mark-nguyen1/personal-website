@@ -11,7 +11,14 @@
             "img":"../assets/ntf.jpg",
             "title":"Twitter Clone",
             "techStacks":"ReactJS, NodeJS, ExpressJS, MongoDB, Tailwind, JavaScript ",
-            "projectInfo":"A twitter clone."
+            "projectInfo":" A Twitter clone that involves several components and technologies working together to replicate core functionalities of Twitter."
+        },
+        {
+            "img":"../assets/ntf.jpg",
+            "title":"Personal Website",
+            "techStacks":"React",
+            "projectInfo":"My Portfolio that showcases projects developed during studies, internships, or personal endeavors. Each project details the   technologies used, and outcomes achieved"
         }
+    
     ]
 }
