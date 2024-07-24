@@ -86,7 +86,7 @@ const ContactForm = () => {
             autoComplete="off"
             placeholder="email address"
             value={formData.email}
-            style={{ width: "350px" }}
+            style={{ width: " 32.5%" }}
             onChange={handleChange}
             required
           />

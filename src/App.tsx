@@ -16,7 +16,7 @@ function App() {
         <h1 className="section">Projects</h1>
         <InfoCards />
       </div>
-      <div id="contact">
+      <div id="contact" className="screen-view">
         <h1 className="section">Contact</h1>
         <ContactForm />
       </div>
