@@ -3,6 +3,7 @@ import { useState, ChangeEvent, useEffect } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { toast } from "react-hot-toast";
 import { ThreeDots } from "react-loader-spinner";
+import { IoMdSend } from "react-icons/io";
 
 const ContactForm = () => {
   const [state, handleSubmit, reset] = useForm("meojodeb");
@@ -43,7 +44,7 @@ const ContactForm = () => {
 
   return (
     <>
-      <form onSubmit={handleSubmit} className="form-container">
+      <form onSubmit={handleSubmit} className="form-container" id="contactform">
         <p>
           Hi Mark!
           <br />
@@ -51,6 +52,7 @@ const ContactForm = () => {
           <input
             id="firstName"
             name="firstName"
+            autoComplete="off"
             placeholder="first name"
             value={formData.firstName}
             onChange={handleChange}
@@ -64,6 +66,7 @@ const ContactForm = () => {
           <input
             id="lastName"
             name="lastName"
+            autoComplete="off"
             placeholder="last name"
             value={formData.lastName}
             onChange={handleChange}
@@ -79,7 +82,8 @@ const ContactForm = () => {
             id="email"
             type="email"
             name="email"
-            placeholder="email"
+            autoComplete="off"
+            placeholder="email address"
             value={formData.email}
             style={{ width: "350px" }}
             onChange={handleChange}
@@ -91,6 +95,7 @@ const ContactForm = () => {
         <textarea
           id="message"
           name="message"
+          autoComplete="off"
           placeholder="Message here..."
           value={formData.message}
           onChange={handleChange}
@@ -104,7 +109,11 @@ const ContactForm = () => {
         <label htmlFor="email"></label>
 
         <button type="submit" disabled={state.submitting}>
-          {state.submitting ? <ThreeDots color="lightblue" /> : "Submit"}
+          {state.submitting ? (
+            <ThreeDots color="lightblue" />
+          ) : (
+            <IoMdSend color="blue" size="2em" />
+          )}
         </button>
       </form>
     </>
