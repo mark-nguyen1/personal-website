@@ -1,32 +1,36 @@
-/* -------------------- profile --------------- */
-
 .profile-container {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-
-  display: flex;
+  display: grid;
   justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .profile-container div {
-  padding: 10%;
+  padding: 5%;
 }
+
 .profile-container span {
   color: rgb(28, 151, 12);
 }
-.profile-container h1 {
-  font-size: 65px;
+
+h1 {
+  font-size: 64px;
   font-family: Arial, Helvetica, sans-serif;
-}
-.content-container {
-  margin-left: 5%;
 }
 
 .image-container {
+  display: flex;
+  justify-content: right;
   margin-right: 10%;
-  margin-left: -10%;
 }
-.profile-container p {
+
+.content-container {
+  margin-right: 10%;
+}
+
+.profile-container h2 {
   font-size: 30px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 100;
@@ -37,9 +41,53 @@
   object-fit: cover;
   box-shadow: 10px 5px 25px rgb(114, 113, 113);
   transition: 0.5s;
-  margin-top: -50px; /* Adjust margin-top to move the image up */
+  max-width: 100%;
+  height: auto;
 }
 
 .circular-image:hover {
   box-shadow: 10px 5px 100px rgb(235, 233, 149);
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 15px;
+    font-weight: 90;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    grid-template-columns: 1fr;
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    height: auto;
+    margin-top: 7%;
+  }
+
+  .content-container {
+    margin: auto;
+  }
+  .image-container {
+    margin: auto;
+    max-width: 50%;
+    height: auto;
+  }
+
+  h1,
+  h2 {
+    text-align: center;
+  }
+  .content-container h1 {
+    font-size: 6vw; /* 5% of the viewport width */
+  }
+  .content-container h2 {
+    font-size: 4vw; /* 5% of the viewport width */
+  }
+}
+
+@media (max-width: 600px) {
 }
