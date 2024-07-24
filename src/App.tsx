@@ -3,16 +3,24 @@ import Profile from "./components/profile/Profile";
 import InfoCards from "./components/card/InfoCards";
 import ContactForm from "./components/contact/ContactForm";
 import { Toaster } from "react-hot-toast";
-
+import "./App.css";
 function App() {
   return (
-    <>
+    <div>
       <Toaster />
-      <NavBar></NavBar>
-      <Profile></Profile>
-      <InfoCards></InfoCards>
-      <ContactForm></ContactForm>
-    </>
+      <NavBar />
+      <div id="home">
+        <Profile />
+      </div>
+      <div id="projects">
+        <h1 className="section">Projects</h1>
+        <InfoCards />
+      </div>
+      <div id="contact">
+        <h1 className="section">Contact</h1>
+        <ContactForm />
+      </div>
+    </div>
   );
 }
 
