@@ -1,4 +1,6 @@
 import profilePicutre from "../../assets/profile-picture.png";
+import "./profile.css";
+
 const Profile = () => {
   return (
     <div className="profile-container">

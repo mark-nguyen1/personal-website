@@ -1,0 +1,37 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 15px 15px;
+  background-color: hsla(195, 53%, 79%);
+}
+
+.navbar a {
+  position: relative;
+  margin: 0 15px;
+  font-size: x-large;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar a::before {
+  content: "";
+  background: black;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  top: 100%;
+  transition: 0.3s;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}

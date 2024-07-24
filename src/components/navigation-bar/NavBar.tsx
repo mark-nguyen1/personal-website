@@ -1,4 +1,6 @@
-import ProgressBar from "./ProgressBar";
+import ProgressBar from "../progress-bar/ProgressBar";
+import "./nav-bar.css";
+
 const NavBar = () => {
   return (
     <>
