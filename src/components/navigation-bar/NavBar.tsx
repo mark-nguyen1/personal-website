@@ -94,15 +94,26 @@ const NavBar = () => {
 
             <a>{menuIcon}</a>
             <div className="hideOnMobile">
-              <a href="#home">Home</a>
-              <a href="#projects">Projects</a>
-              <a href="#contact">Contact</a>
+              <a className="navitems" href="#home">
+                Home
+              </a>
+              <a className="navitems" href="#projects">
+                Projects
+              </a>
+              <a className="navitems" href="#contact">
+                Contact
+              </a>
             </div>
-            <div className="icons">
-              <a href="https://github.com/mark-nguyen1" target="_blank">
+            <div className="icons-container">
+              <a
+                className="icons"
+                href="https://github.com/mark-nguyen1"
+                target="_blank"
+              >
                 {gitHubIcon}
               </a>
               <a
+                className="icons"
                 href="https://www.linkedin.com/in/mark-nguyen1/"
                 target="_blank"
               >

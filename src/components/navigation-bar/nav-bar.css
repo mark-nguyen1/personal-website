@@ -16,29 +16,21 @@ nav {
 
 .navbar a {
   position: relative;
-  margin: 0 15px;
   font-size: 28px;
   font-weight: 90;
   text-decoration: none;
   color: black;
 }
 
-.navbar a::before {
-  content: "";
-  background: black;
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  top: 100%;
-  transition: 0.3s;
-}
-
-.navbar a:hover::before {
-  width: 100%;
-}
-
-.navbar .icons {
+.navbar .icons-container {
   margin-left: auto;
+}
+.navbar .icons {
+  padding: 0px 15px;
+}
+
+.navbar .icons:hover {
+  text-decoration: underline;
 }
 
 .sidebar {
@@ -73,6 +65,16 @@ nav {
 .icons-small {
   display: None;
 }
+
+.navitems {
+  margin: 6px;
+  padding: 6px;
+}
+.navitems:hover {
+  border: 2px solid #000;
+  margin: 4px;
+}
+
 @media (max-width: 768px) {
   .navbar a {
     font-size: 22px;
