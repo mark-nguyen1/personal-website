@@ -2,22 +2,25 @@
     "projects":[
         
         {
-            "img":"../assets/game.png",
+            "img":"/gameIcon.png",
             "title":"Game Discoverer",
             "techStacks":"ReactJS, TypeScript,  Chakra UI, Rawg.io Database API ",
-            "projectInfo":"A website that utilizes a database of over 1000s games to help users find new games based on genres, publishers, and gaming platform."
+            "projectInfo":"A website that utilizes a database of over 1000s games to help users find new games based on genres, publishers, and gaming platform.",
+            "githubLink": "https://github.com/mark-nguyen1/game-discoverer"
         },
         {
-            "img":"../assets/ntf.jpg",
+            "img":"/x-logo.png",
             "title":"Twitter Clone",
             "techStacks":"ReactJS, NodeJS, ExpressJS, MongoDB, Tailwind, JavaScript ",
-            "projectInfo":" A Twitter clone that involves several components and technologies working together to replicate core functionalities of Twitter."
+            "projectInfo":" A Twitter clone that involves several components and technologies working together to replicate core functionalities of Twitter.",
+            "githubLink":"https://github.com/mark-nguyen1/twitterClone"
         },
         {
-            "img":"../assets/ntf.jpg",
+            "img":"/websiteLogo.jpg",
             "title":"Personal Website",
             "techStacks":"React",
-            "projectInfo":"My Portfolio that showcases projects developed during studies, internships, or personal endeavors. Each project details the   technologies used, and outcomes achieved"
+            "projectInfo":"My Portfolio that showcases projects developed during studies, internships, or personal endeavors. Each project details the   technologies used, and outcomes achieved",
+            "githubLink":"https://github.com/mark-nguyen1/personal-website"
         }
     
     ]

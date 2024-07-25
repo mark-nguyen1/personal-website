@@ -12,11 +12,13 @@ function App() {
       <div id="home">
         <Profile />
       </div>
-      <div id="projects">
+      <div className="screen-view">
+        <h1 id="projects"></h1>
         <h1 className="section">Projects</h1>
         <InfoCards />
       </div>
-      <div id="contact" className="screen-view">
+      <div className="screen-view">
+        <h1 id="contact"></h1>
         <h1 className="section">Contact</h1>
         <ContactForm />
       </div>
