@@ -10,6 +10,7 @@ const InfoCards = () => {
           title={project.title}
           techStacks={project.techStacks}
           projectInfo={project.projectInfo}
+          githubLink={project.githubLink}
         ></InfoCard>
       ))}
     </>
