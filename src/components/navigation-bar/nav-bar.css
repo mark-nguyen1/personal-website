@@ -17,7 +17,8 @@ nav {
 .navbar a {
   position: relative;
   margin: 0 15px;
-  font-size: x-large;
+  font-size: 28px;
+  font-weight: 90;
   text-decoration: none;
   color: black;
 }
@@ -34,4 +35,75 @@ nav {
 
 .navbar a:hover::before {
   width: 100%;
+}
+
+.navbar .icons {
+  margin-left: auto;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.459);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+
+  backdrop-filter: blur(8px);
+  transition: 0.5s;
+}
+.sidebar a:hover {
+  background-color: white;
+}
+
+.sidebar a {
+  width: auto;
+  font-size: 40px;
+}
+
+.menu-button {
+  display: None;
+}
+.icons-small {
+  display: None;
+}
+@media (max-width: 768px) {
+  .navbar a {
+    font-size: 22px;
+  }
+}
+@media (max-width: 600px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+}
+
+@media (max-width: 320px) {
+  .icons {
+    display: none;
+  }
+
+  .icons-small {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+  }
 }
