@@ -3,7 +3,6 @@ import { useState, ChangeEvent, useEffect } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { toast } from "react-hot-toast";
 import { ThreeDots } from "react-loader-spinner";
-import { IoMdSend } from "react-icons/io";
 
 import "./contact-form.css";
 const ContactForm = () => {
@@ -41,7 +40,6 @@ const ContactForm = () => {
       reset();
     }
   }, [state.succeeded]);
-  console.log(state.succeeded);
 
   return (
     <>
