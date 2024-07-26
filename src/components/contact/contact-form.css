@@ -1,5 +1,14 @@
-/* contact section */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .form-container {
+  background-image: url("../../../public/email.jpg");
+  display: flex;
+  justify-content: space-evenly;
+  gap: 25px;
+  align-items: center;
+  flex-direction: column;
   margin-left: auto;
   margin-right: auto;
   background-color: white;
@@ -25,6 +34,13 @@
   box-shadow: 0px 1px rgb(114, 113, 113);
 }
 
+.form {
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+  border: 2px solid black;
+  box-shadow: 5px 5px 10px rgb(92, 92, 92);
+}
 .form-container input {
   text-align: center;
 
@@ -41,13 +57,19 @@
 }
 
 .form-container button {
-  border-radius: 45px;
+  background-color: rgb(24, 24, 187);
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
+  width: 200px;
   height: 50px;
-  margin: auto;
+}
+.form-container button:hover {
+  background-color: darkblue;
 }
 
 input:hover {
@@ -72,5 +94,6 @@ textarea:hover {
   .form-container button {
     width: 20%;
     height: 10%;
+    font-size: 3vw;
   }
 }

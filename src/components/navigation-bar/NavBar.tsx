@@ -1,6 +1,6 @@
 import ProgressBar from "../progress-bar/ProgressBar";
 import "./nav-bar.css";
-
+import { ImNewTab } from "react-icons/im";
 const NavBar = () => {
   function showSideBar(display: boolean) {
     const sidebar = document.querySelector(".sidebar") as HTMLElement;
@@ -102,6 +102,13 @@ const NavBar = () => {
               </a>
               <a className="navitems" href="#contact">
                 Contact
+              </a>
+              <a
+                className="navitems"
+                href="https://github.com/mark-nguyen1/resume"
+                target="_blank"
+              >
+                Resume <ImNewTab size="20px" />
               </a>
             </div>
             <div className="icons-container">

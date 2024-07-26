@@ -46,75 +46,77 @@ const ContactForm = () => {
   return (
     <>
       <form onSubmit={handleSubmit} className="form-container" id="contactform">
-        <p>
-          Hi Mark!
-          <br />
-          My name is{" "}
-          <input
-            id="firstName"
-            name="firstName"
+        <div className="form">
+          <p>
+            Hi Mark!
+            <br />
+            My name is{" "}
+            <input
+              id="firstName"
+              name="firstName"
+              autoComplete="off"
+              placeholder="first name"
+              value={formData.firstName}
+              onChange={handleChange}
+              required
+            />
+            <ValidationError
+              prefix="FirstName"
+              field="firstName"
+              errors={state.errors}
+            />
+            <input
+              id="lastName"
+              name="lastName"
+              autoComplete="off"
+              placeholder="last name"
+              value={formData.lastName}
+              onChange={handleChange}
+              required
+            />
+            <ValidationError
+              prefix="LastName"
+              field="lastName"
+              errors={state.errors}
+            />
+            and I am reaching out from
+            <input
+              id="email"
+              type="email"
+              name="email"
+              autoComplete="off"
+              placeholder="email address"
+              value={formData.email}
+              style={{ width: " 32.5%" }}
+              onChange={handleChange}
+              required
+            />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
+            />
+            to inquire you about:{" "}
+          </p>
+          <textarea
+            id="message"
+            name="message"
             autoComplete="off"
-            placeholder="first name"
-            value={formData.firstName}
+            placeholder="Message here..."
+            value={formData.message}
             onChange={handleChange}
             required
           />
           <ValidationError
-            prefix="FirstName"
-            field="firstName"
+            prefix="Message"
+            field="message"
             errors={state.errors}
           />
-          <input
-            id="lastName"
-            name="lastName"
-            autoComplete="off"
-            placeholder="last name"
-            value={formData.lastName}
-            onChange={handleChange}
-            required
-          />
-          <ValidationError
-            prefix="LastName"
-            field="lastName"
-            errors={state.errors}
-          />
-          and I am reaching out from
-          <input
-            id="email"
-            type="email"
-            name="email"
-            autoComplete="off"
-            placeholder="email address"
-            value={formData.email}
-            style={{ width: " 32.5%" }}
-            onChange={handleChange}
-            required
-          />
-          <ValidationError prefix="Email" field="email" errors={state.errors} />
-          to inquire you about:{" "}
-        </p>
-        <textarea
-          id="message"
-          name="message"
-          autoComplete="off"
-          placeholder="Message here..."
-          value={formData.message}
-          onChange={handleChange}
-          required
-        />
-        <ValidationError
-          prefix="Message"
-          field="message"
-          errors={state.errors}
-        />
-        <label htmlFor="email"></label>
+          <label htmlFor="email"></label>
+        </div>
 
         <button type="submit" disabled={state.submitting}>
-          {state.submitting ? (
-            <ThreeDots color="lightblue" />
-          ) : (
-            <IoMdSend color="blue" size="2em" />
-          )}
+          {state.submitting ? <ThreeDots color="lightblue" /> : "Send"}
         </button>
       </form>
     </>
